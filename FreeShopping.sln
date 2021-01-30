@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FreeShopping.Common", "FreeShopping.Common\FreeShopping.Common.csproj", "{DCDAA6E4-117E-49C6-8981-85661A48D539}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeShopping.Web", "FreeShopping.Web\FreeShopping.Web.csproj", "{2033B2D9-CE76-40FA-86E4-26264B71ABED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCDAA6E4-117E-49C6-8981-85661A48D539}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCDAA6E4-117E-49C6-8981-85661A48D539}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCDAA6E4-117E-49C6-8981-85661A48D539}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCDAA6E4-117E-49C6-8981-85661A48D539}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2033B2D9-CE76-40FA-86E4-26264B71ABED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2033B2D9-CE76-40FA-86E4-26264B71ABED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2033B2D9-CE76-40FA-86E4-26264B71ABED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2033B2D9-CE76-40FA-86E4-26264B71ABED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {94C13AB3-613E-4FD9-9A64-A3AA08939943}
+	EndGlobalSection
+EndGlobal
