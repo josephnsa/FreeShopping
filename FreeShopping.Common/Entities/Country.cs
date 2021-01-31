@@ -9,7 +9,7 @@ namespace FreeShopping.Common.Entities
     public class Country
     {
         public int Id { get; set; }
-        [MaxLength(50)]
+        [MaxLength(50, ErrorMessage = "The Filed (0) must containt less than (1) characteres. ")]
         [Required]
         public string  Name { get; set; }
         public ICollection<Department> Departments { get; set; }
