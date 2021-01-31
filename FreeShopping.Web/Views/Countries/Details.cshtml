@@ -1,8 +1,6 @@
 ﻿@model FreeShopping.Common.Entities.Country
 
-@{
-    ViewData["Title"] = "Details";
-}
+@{ ViewData["Title"] = "Details"; }
 
 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
 <h2>Details</h2>
@@ -30,8 +28,7 @@
     <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Edit</a>
     <a asp-action="Index" class="btn btn-success">Back to List</a>
 </div>
-<br />
-
+<hr />
 <div class="row">
     <div class="col-md-12">
         <div class="panel panel-default">
@@ -54,20 +51,19 @@
                     <tbody>
                         @foreach (var item in Model.Departments)
                         {
-                            <tr>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Name)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.CitiesNumber)
-                                </td>
-                                <td>
-                                    <a asp-action="EditDepartment" asp-route-id="@item.Id" class="btn btn-warning"><i class="glyphicon glyphicon-pencil"></i></a>
-                                    <a asp-action="DetailsDepartment" asp-route-id="@item.Id" class="btn btn-info"><i class="glyphicon glyphicon-align-justify"></i></a>
-                                    <button data-id="@item.Id" class="btn btn-danger deleteItem" data-toggle="modal" data-target="#deleteDialog"><i class="glyphicon glyphicon-trash"></i></button>
-                                </td>
-                            </tr>
-                        }
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CitiesNumber)
+                </td>
+                <td>
+                    <a asp-action="EditDepartment" asp-route-id="@item.Id" class="btn btn-warning"><i class="glyphicon glyphicon-pencil"></i></a>
+                    <a asp-action="DetailsDepartment" asp-route-id="@item.Id" class="btn btn-info"><i class="glyphicon glyphicon-align-justify"></i></a>
+                    <button data-id="@item.Id" class="btn btn-danger deleteItem" data-toggle="modal" data-target="#deleteDialog"><i class="glyphicon glyphicon-trash"></i></button>
+                </td>
+            </tr>}
                     </tbody>
                 </table>
             </div>
@@ -91,3 +87,4 @@
         });
     </script>
 }
+
